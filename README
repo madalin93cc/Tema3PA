@@ -1,0 +1,21 @@
+Tema 3 PA
+Colezea Madalin 
+325CC
+
+Continut arhiva:
+	- elimination.java;
+	- Makefile;
+	- README;
+	
+Detalii implementare:
+	- in rezolvarea problemei nu am folosit un algoritm clasic, studiat pe la curs, etc 
+		desi probabil astfel as fi gasit o solutie mult mai optima decat cea actuala;
+	- in gasirea algoritmului am plecat oarecum de la ideea unui algoritm de tipul minimax;
+		astfel explorez toate starile prin care ar putea trece, recurenta oprindu-se atunci 
+		cand fie ajung la o stare explorata anterior (explorarea ei in continuare ar duce 
+		la ciclare), fie cand costul obtinut este mai mare decat cel mai bun cost 
+		obtinut pana in momentul respectiv;
+	- in functie de datele de intrare si de modul in care sunt satisfacute conditiile de 
+		oprire din recursivitate complexitatea creste foarte multe, numarul starilor de 
+		explorat crescand exponential cu R, complexitatea ajungand la O(R^R);
+	- probabil as putea sa mai optimizez cu o alta conditie de oprire dar nu imi dau seama care;
